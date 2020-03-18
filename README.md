@@ -10,9 +10,9 @@ place your database and bot configurations in app/config.py
 
 use app/config.py.sample for example.
 ## running:
-`make migrate`
-
 `make migration`
+
+`make migrate`
 
 running in polling mode (app/__main__.py):
 

@@ -15,17 +15,16 @@ help:
 
 
 alembic:
-	PYTHONPATH=$(shell pwd):${PYTHONPATH} pipenv run alembic ${args}
+	PYTHONPATH=$(shell pwd):${PYTHONPATH} alembic ${args}
 
 migrate:
-	PYTHONPATH=$(shell pwd):${PYTHONPATH} pipenv run alembic upgrade head
+	PYTHONPATH=$(shell pwd):${PYTHONPATH} alembic upgrade head
 
 migration:
-	PYTHONPATH=$(shell pwd):${PYTHONPATH} pipenv run alembic revision --autogenerate -m "${message}"
+	PYTHONPATH=$(shell pwd):${PYTHONPATH} alembic revision --autogenerate -m "${message}"
 
 downgrade:
-	PYTHONPATH=$(shell pwd):${PYTHONPATH} pipenv run alembic downgrade -1
+	PYTHONPATH=$(shell pwd):${PYTHONPATH} alembic downgrade -1
 
 app:
-	pipenv run python -m app ${args}
-
+	python -m app ${args}
