@@ -20,6 +20,6 @@ running in polling mode (app/__main__.py):
 
 also in autoreload mode:
 
-`python -m app polling` , `aiohttp_autoreload` must be installed.
+`python -m app polling --autorelad` , `aiohttp_autoreload` must be installed. _unfortunately is not avalibale._
 
 
