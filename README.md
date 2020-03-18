@@ -6,6 +6,7 @@ a basic telegram bot with basic options with aiogram. for base of new projects.
 - Application in app
 
 ## installing:
+first of all you need to install postgresql and create a database
 place your database and bot configurations in app/config.py
 
 use app/config.py.sample for example.
